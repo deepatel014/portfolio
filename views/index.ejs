@@ -1,6 +1,54 @@
 <%- include('partials/header') %>
 <%- include('partials/nav') %>
-    <h1><%= title %></h1>
-    <p>Welcome Deep</p>
-   
+
+<!-- <div>
+    <h1 class="display-4">About Me!</h1>
+    <p class="mb-0">I am a software engineering student with a three year undergraduate degree and currently am pursuing my post graduate in Software Engineering with
+        emphasis on Artificial Intelligence.Most recently I have worked as a virtualization engineer for 6 months as an intern and before that I had worked at a bank.Through these two experiences I have a grasp of how I must speak to different customers and how to explain them about products and also know
+        how to be a team player</p>
+</div> -->
+<div class="align-items-center">
+  <div class="container d-flex flex-column justify-content-center p-3 mx-auto">
+    <div height="100%" height="100%">
+      <img src="static/images/photo.png" class="rounded-circle mx-auto d-block img-thumbnail " style="width:300px;height:300px;" >
+    </div>
+    <h1 class="cover-heading text-center">hello, My name is Deep Patel.</h1>
+    <p class="lead">
+      I am a software engineering student with a three year undergraduate degree
+      and currently am pursuing my post graduate in Software Engineering with
+      emphasis on Artificial Intelligence.Most recently I have worked as a
+      virtualization engineer for 6 months as an intern and before that I had
+      worked at a bank.Through these two experiences I have a grasp of how I
+      must speak to different customers and how to explain them about products
+      and also know how to be a team player.
+    </p>
+    
+    <div class="lead text-center">
+      <a
+        class="btn btn-lg btn-secondary m-auto p-3"
+        id="download-btn"
+        href="https://drive.google.com/file/d/1Tnwe-hWfC2LjLakqV7HlqsCll9xhV79N/view?usp=share_link"
+       target="_blank"
+      >
+        Download Resume
+        <!-- <span></span> -->
+      </a>
+    </div>
+  </div>
+</div>
+
+<!-- <script>
+    let button  = document.getElementById("download-btn");
+    button.addEventListener("click",()=>{
+        const span = document.querySelector("a span");
+        button.style.paddingRight = '10px;';
+        span.style.visibility = "visible";
+        setTimeout(()=>{
+            span.style.visibility = "hidden;";
+            button.style.paddingRight = "0px";
+        })
+    })
+</script> -->
+
+
 <%- include('partials/footer') %>  
