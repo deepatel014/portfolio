@@ -1,5 +1,65 @@
-<%- include('partials/header') %>
-<%- include('partials/nav') %>
-   
-<p>Services Page</p>
-<%- include('partials/footer') %>  
+<%- include('partials/header') %> <%- include('partials/nav') %>
+
+<style>
+  .img-size{
+    width:25%;
+    height:25%;
+  }
+</style>
+
+
+<div class="card-group text-center border-0">
+  <div class="card text-center border-0">
+    <img
+      class="card-img-top  mx-auto"
+      src="static/services-icons/cloud.png"
+      alt="Website Hosting"
+      style="height: 300px; width:300px;"
+    />
+    <div class="card-body text-center">
+      <h5 class="card-title">Website Hosting</h5>
+      <p class="card-text">
+        My reliable and secure website hosting solutions will ensure that your
+        website is always online and accessible to your audience. I offer a
+        variety of hosting plans to fit the needs of any website, big or small.
+      </p>
+    </div>
+  </div>
+  <div class="card text-center border-0">
+    <img
+      class="card-img-top mx-auto"
+      src="static/services-icons/coding.png"
+      alt="Web Development"
+      style="height: 300px; width:300px;"
+    />
+    <div class="card-body">
+      <h5 class="card-title">Web Development</h5>
+      <p class="card-text">
+        I offer custom web development services to help you build and enhance
+        your online presence. I will work with you to create a website that fits
+        your specific needs and goals.
+      </p>
+    </div>
+  </div>
+  <div class="card text-center border-0">
+    <img
+      class="card-img-top mx-auto "
+      src="static/services-icons/agile.png"
+      alt="Card image cap"
+      style="height: 300px; width:300px;"
+    />
+       
+            <div class="card-body">
+                <h5 class="card-title">DevOps</h5>
+                        <p class="card-text">
+                            My DevOps services will help you streamline your software development
+                            and delivery processes. I will work with you to
+                            automate your infrastructure, optimize your CI/CD pipeline, and improve
+                            your overall efficiency and security.
+                        </p>
+            </div>
+    
+  </div>
+</div>
+
+<%- include('partials/footer') %>

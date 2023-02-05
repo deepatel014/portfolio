@@ -1,4 +1,60 @@
-<%- include('partials/header') %>
-<%- include('partials/nav') %>
+<style>
+  .line hr {
+    height: 1px;
+    border: 0;
+    background: black;
+    width: 70%;
+  }
+</style>
+<%- include('partials/header') %> <%- include('partials/nav') %>
 
+<div class="container-fluid d-flex justify-content-center">
+    
+  <div>
+    <div
+      height="100%"
+      width="85%"
+      class="container d-flex flex-column justify-content-center p-3 mx-auto"
+    >
+      <img
+        src="static/images/photo.png"
+        class="rounded-circle mx-auto d-block"
+        style="width: 300px; height: 300px"
+      />
+      <div class="d-flex justify-content-center"><h1>Deep Patel</h1></div>
+    </div>
+
+        <div class="container mx-5">
+            <h1>A few words about me....</h1>
+            <p>
+            "I hold a Bachelor's degree in Computer Applications and am currently
+            pursuing my studies at Centennial College in the field of Computer
+            Engineering Technology with a focus on Artificial Intelligence. My passion
+            for technology and its advancements has driven me to continuously expand
+            my knowledge and skills in the field. I am eager to apply what I have
+            learned in my studies to real-world challenges and contribute to the
+            growth of the AI industry. I believe that my background in computer
+            applications and my ongoing studies in computer engineering technology
+            with an emphasis on AI will enable me to bring unique perspectives and
+            innovative solutions to any project I work on."
+            </p>
+        </div>
+        <div class="lead text-center">
+            <a
+              class="btn btn-lg btn-secondary m-auto p-3"
+              id="download-btn"
+              href="https://drive.google.com/file/d/1Tnwe-hWfC2LjLakqV7HlqsCll9xhV79N/view?usp=share_link"
+             target="_blank"
+            >
+              Download Resume
+              <!-- <span></span> -->
+            </a>
+          </div>
+  </div>
+  <div class="line">
+    <hr />
+  </div>
+
+  
+</div>
 <%- include('partials/footer') %>

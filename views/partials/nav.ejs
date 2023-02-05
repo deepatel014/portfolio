@@ -49,13 +49,21 @@
           <a class="nav-link" href="/services"><i class="fa-solid fa-microchip"></i> Services </a>
         </li>
 
-        <% if (title == "Contact") { %>
+        <% if (title == "Projects") { %>
         <li class="nav-item active">
         <% } else  { %>
         <li class="nav-item">
         <% } %>
-          <a class="nav-link" href="/contacts"><i class="fas fa-mobile-alt"></i> Contact </a>
+          <a class="nav-link" href="/projects"><i class="fas fa-project-diagram"></i> Projects </a>
         </li>
+
+        <% if (title == "Contact") { %>
+          <li class="nav-item active">
+          <% } else  { %>
+          <li class="nav-item">
+          <% } %>
+            <a class="nav-link" href="/contacts"><i class="fas fa-mobile-alt"></i> Contact </a>
+          </li>
         
     </div>
   
