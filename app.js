@@ -11,7 +11,23 @@ var serviceRouter = require('./routes/services');
 var contactRouter = require('./routes/contact');
 var projectRouter = require('./routes/projects');
 
+// port function testing
+function normalizePort(val) {
+  var port = parseInt(val, 10);
 
+  if (isNaN(port)) {
+    // named pipe
+    return val;
+  }
+
+  if (port >= 0) {
+    // port number
+    return port;
+  }
+
+  return false;
+}
+// port function ends
 
 var app = express();
 
@@ -52,3 +68,9 @@ app.use(function(err, req, res, next) {
 });
 
 module.exports = app;
+
+// connecting to port from app.js instead of server.js
+var port = normalizePort(process.env.PORT || '3000');
+app.listen(port, function() {
+  console.log(`App running on port ${port}`);
+})
