@@ -70,7 +70,7 @@ app.use(function(err, req, res, next) {
 module.exports = app;
 
 // connecting to port from app.js instead of server.js
-var port = normalizePort(process.env.PORT || '3000');
-app.listen(port, function() {
-  console.log(`App running on port ${port}`);
-})
+// var port = normalizePort(process.env.PORT || '3000');
+// app.listen(port, function() {
+//   console.log(`App running on port ${port}`);
+// })
