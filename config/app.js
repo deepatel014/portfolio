@@ -1,8 +1,8 @@
-var createError = require('http-errors');
-var express = require('express');
-var path = require('path');
-var cookieParser = require('cookie-parser');
-var logger = require('morgan');
+let createError = require('http-errors');
+let express = require('express');
+let path = require('path');
+let cookieParser = require('cookie-parser');
+let logger = require('morgan');
 
 // database setup
 let mongoose = require('mongoose');
@@ -20,18 +20,19 @@ mongoDB.once('open' , ()=>{
 
 
 
-// router variables set for the views.
-var indexRouter = require('../routes/index');
-var usersRouter = require('../routes/users');
-var aboutRouter = require('../routes/about');
-var serviceRouter = require('../routes/services');
-var contactRouter = require('../routes/contact');
-var projectRouter = require('../routes/projects');
-var loginRouter = require('../routes/login');
+// router letiables set for the views.
+let indexRouter = require('../routes/index');
+let usersRouter = require('../routes/users');
+let aboutRouter = require('../routes/about');
+let serviceRouter = require('../routes/services');
+let contactRouter = require('../routes/contact');
+let projectRouter = require('../routes/projects');
+let loginRouter = require('../routes/login');
+let businessRouter = require('../routes/business');
 
 // port function testing
 function normalizePort(val) {
-  var port = parseInt(val, 10);
+  let port = parseInt(val, 10);
 
   if (isNaN(port)) {
     // named pipe
@@ -47,7 +48,7 @@ function normalizePort(val) {
 }
 // port function ends
 
-var app = express();
+let app = express();
 
 // view engine setup
 app.set('views', path.join(__dirname, '../views'));
@@ -69,6 +70,7 @@ app.use('/services',serviceRouter);
 app.use('/contacts',contactRouter);
 app.use('/projects',projectRouter);
 app.use('/login', loginRouter);
+app.use('/business',businessRouter);
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
@@ -89,7 +91,7 @@ app.use(function(err, req, res, next) {
 module.exports = app;
 
 // connecting to port from app.js instead of server.js
-// var port = normalizePort(process.env.PORT || '3000');
+// let port = normalizePort(process.env.PORT || '3000');
 // app.listen(port, function() {
 //   console.log(`App running on port ${port}`);
 // })

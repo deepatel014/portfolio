@@ -1,0 +1,24 @@
+<%- include('partials/header') %> <%- include('partials/login_nav') %>
+<div class="container">
+  <table class="table table-dark">
+    <thead>
+      <tr>
+        <th scope="col">Name</th>
+        <th scope="col">Phone Number</th>
+        <th scope="col">Email Address</th>
+      </tr>
+    </thead>
+    <tbody>
+        <% for(let count=0; count < ContactList.length; count++) { %>
+      <tr>
+        <td><%= ContactList[count].name %></td>
+        <td><%= ContactList[count].phone %></td>
+        <td><%= ContactList[count].email %></td>
+      </tr>
+      
+      <% } %>
+    </tbody>
+  </table>
+</div>
+
+<%- include('partials/footer') %>
