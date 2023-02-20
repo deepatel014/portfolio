@@ -1,0 +1,70 @@
+<%- include('partials/header') %> 
+<%- include('partials/login_nav') %>
+<style>
+    body{
+        background: linear-gradient(to right, rgb(255, 255, 255), rgb(8, 8, 8))
+    }
+    .gradient-custom {
+/* fallback for old browsers */
+background: rgb(255, 255, 255);
+
+/* Chrome 10-25, Safari 5.1-6 */
+background: -webkit-linear-gradient(to right, rgb(254, 254, 254), rgb(255, 255, 255));
+
+/* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+background: linear-gradient(to right, rgb(255, 255, 255), rgb(8, 8, 8))
+}
+</style>
+<section class=" gradient-custom">
+    <div class="container py-4 h-80">
+      <div class="row d-flex justify-content-center align-items-center h-100">
+        <div class="col-12 col-md-8 col-lg-6 col-xl-5">
+          <div class="card bg-dark text-white" style="border-radius: 1rem;">
+            <div class="card-body p-5 text-center">
+  
+              <div class="mb-md-5 mt-md-4 pb-5">
+  
+                <h2 class="fw-bold mb-2 text-uppercase">Login</h2>
+                <div class="form-outline form-white mb-4">
+                    <input type="text" id="user" name="username" class="form-control form-control-lg" />
+                    <label class="form-label" for="user">Username</label>
+                  </div>
+                <div class="form-outline form-white mb-4">
+                  <input type="email" id="email" name="email" class="form-control form-control-lg" />
+                  <label class="form-label" for="email">Email</label>
+                </div>
+  
+                <div class="form-outline form-white mb-4">
+                  <input type="password" id="password" name="password" class="form-control form-control-lg" />
+                  <label class="form-label" for="password">Password</label>
+                </div>
+                <button class="btn btn-outline-light btn-lg px-5" id="submit" type="submit">Login</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+        <%- include('partials/footer') %>
+
+
+<script>
+  // let user = document.getElementById("user");
+  // let mail = document.getElementById("email");
+  // let pass = document.getElementById("pass");
+
+  // let submit = document.getElementById("submit");
+
+  
+  //     submit.addEventListener("click",function(){
+  //       if(user == User[0].username && pass == User[1].password){
+  //         window.location.href = "/business_contact";
+  //       }
+  //       else{
+
+  //       }
+  //     })
+  
+</script>
